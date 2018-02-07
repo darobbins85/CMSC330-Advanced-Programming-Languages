@@ -1,0 +1,15 @@
+Grammar written in BNF
+
+gui 		  ::= 	Window TITLE '(' WIDTH ',' HEIGHT ')' <layout> <widgets> End '.'
+
+layout 		  ::= 	Layout <layout_type> ':'
+
+layout_type   ::=	Flow | Grid '(' ROWS ',' COLUMNS [',' HGAP ',' VGAP] ')'
+
+widgets		  ::= 	<widget> <widgets> | <widget>
+
+widget		  ::=	Button NAME ";" | Group <radio_buttons> End ";" | Label NAME ";" | Panel <layout> <widgets> End ';' | Textfield WIDTH ";"
+
+radio_buttons ::=	<radio_button> <radio_buttons> | <radio_button>
+
+radio_button  ::=	Radio NAME

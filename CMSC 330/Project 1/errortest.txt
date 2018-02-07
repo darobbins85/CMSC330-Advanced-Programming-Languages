@@ -1,0 +1,23 @@
+Window "ErrorTest" (650, 300) Layout Flow:
+ Textfield 20;
+ Textfield 40;
+ Textfield 60;
+ Group 
+ Radio "Radio1";
+ Radio123 "Radio2";
+ Radio "Radio3";
+ End;
+ Panel Layout Grid(4, 3, 5, 5):
+ Button "7";
+ Button "8";
+ Button "9";
+ Button "4";
+ Button "5";
+ Button "6";
+ Button "1";
+ Button "2";
+ Button "3";
+ Label "";
+ Button "0";
+ End;
+End.
